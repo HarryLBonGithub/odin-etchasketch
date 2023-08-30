@@ -11,14 +11,20 @@ body {
 
 }
 
+.centralizer{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
 .grid{
     margin: 1em;
     border-style: solid;
     padding: 1em;
 
     flex-grow: 1;
-    max-height: 50vh;
-    max-width: 50vh;
+    max-height: 75vh;
+    max-width: 75vh;
 
     display: flex;
     flex-direction: column;
@@ -36,8 +42,6 @@ body {
 
 .cell{
     margin: 0px;
-    border-style: dotted;
-    border-width: 1px;
 
     background: grey;
 
