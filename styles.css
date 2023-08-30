@@ -1,3 +1,29 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid{
+    margin: 1em;
+    border-style: solid;
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.cell{
+    margin: 0px;
+    border-style: dotted;
+    border-width: 1px;
+    padding: 1em;
+}
