@@ -15,6 +15,11 @@ for (let i = 0; i< rows; i++){
     for (let j = 0; j < columns; j++){
         let newCell = document.createElement("div");
         newCell.classList.add("cell");
+
+        newCell.onmouseover = (event) => {
+            newCell.style.background = "black";
+        };
+
         newRow.appendChild(newCell);
     }
 
