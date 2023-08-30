@@ -5,7 +5,26 @@ let rows = 16;
 let columns = 16;
 
 let grid = document.querySelector(".grid");
-console.log(grid)
+
+let restart = document.querySelector(".restart");
+
+function requestNewGridSize(){
+    let gridSize = 0;
+    do {
+        gridSize = prompt("How big should the grid be? (Must be less than 100)", "16");
+        gridSize= Number(gridSize)
+    } 
+    while (gridSize >= 100);
+    
+    rows = gridSize;
+    columns = gridSize;
+    console.log("NEW GRID SIZE =" + rows)
+}
+
+function resetCells(){
+    let cells = document.querySelectorAll(".cell");
+}
+
 
 for (let i = 0; i< rows; i++){
     let newRow = document.createElement("div");
@@ -26,3 +45,9 @@ for (let i = 0; i< rows; i++){
 
     grid.appendChild(newRow);
 }
+
+restart.addEventListener("click",()=>{
+    
+    requestNewGridSize();
+
+})

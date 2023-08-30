@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
@@ -30,4 +31,12 @@ body {
     flex-basis: 2em;
     height: 2em;
     background: grey;
+}
+
+.restart {
+    font-size: larger;
+    padding: 1em;
+    margin: 2em;
+    color: grey;
+
 }
